@@ -7,6 +7,7 @@ module.exports = {
       colors: {
         primary: "#fdc800",
         secondary: "#0d2741",
+        hero: "#f0f3f8",
       },
       fontFamily: {
         heading: ["DM Serif Display"],

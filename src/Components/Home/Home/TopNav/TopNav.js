@@ -28,35 +28,37 @@ const brandIcons = [
 
 const TopNav = () => {
   return (
-    <div className="bg-primary py-4 px-16">
-      <div className="flex justify-between items-center text-secondary text-sm font-body">
-        {/* icons and descriptions part */}
-        <div className="flex">
-          {navInfo.map((info) => {
-            return (
-              <div className="flex justify-start mr-8 ">
-                <div className="pr-4">
-                  <FontAwesomeIcon icon={info.icon} />
+    <section className="hidden md:block lg:block">
+      <div className="bg-primary py-4 container">
+        <div className="flex justify-between items-center text-secondary text-sm font-body">
+          {/* icons and descriptions part */}
+          <div className="flex">
+            {navInfo.map((info) => {
+              return (
+                <div className="flex justify-start mr-8 ">
+                  <div className="pr-4">
+                    <FontAwesomeIcon icon={info.icon} />
+                  </div>
+                  <h5>{info.description}</h5>
                 </div>
-                <h5>{info.description}</h5>
-              </div>
-            );
-          })}
-        </div>
-        {/* brans icons part */}
-        <div className="flex justify-end">
-          {brandIcons.map((icons) => {
-            return (
-              <div className="flex">
-                <div className="pl-2">
-                  <FontAwesomeIcon icon={icons.brand} />
+              );
+            })}
+          </div>
+          {/* brans icons part */}
+          <div className="flex justify-end">
+            {brandIcons.map((icons) => {
+              return (
+                <div className="flex">
+                  <div className="pl-2">
+                    <FontAwesomeIcon icon={icons.brand} />
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
