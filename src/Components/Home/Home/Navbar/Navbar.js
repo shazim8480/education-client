@@ -7,7 +7,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/solid";
 
 const Navbar = () => {
   return (
-    <section>
+    <section className="sticky z-10 drop-shadow-lg">
       <Popover className="relative bg-white">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
