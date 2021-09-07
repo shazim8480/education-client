@@ -25,7 +25,9 @@ const UpcomingCard = () => {
           {/* </div> */}
           {/* right div */}
           <div className="text-center md:text-right">
-            <h4 className="text-4xl md:text-6xl md:pl-24">11 : 02 : 45 : 21</h4>
+            <h4 className="text-4xl md:text-6xl md:pl-24 mb-4 md:mb-0 lg:md-0">
+              11 : 02 : 45 : 21
+            </h4>
           </div>
         </div>
       </div>

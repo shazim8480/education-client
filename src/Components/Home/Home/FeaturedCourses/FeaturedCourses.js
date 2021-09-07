@@ -24,7 +24,7 @@ const courseData = [
 
 const FeaturedCourses = () => {
   return (
-    <section className="container py-16  md:pt-52 md:pb-28">
+    <section className="container py-16  md:pt-52 md:pb-28 lg:pt-52 lg:pb-28">
       <h3 className="pb-12 text-center font-heading text-3xl md:text-4xl text-secondary">
         Top Featured Courses
       </h3>
