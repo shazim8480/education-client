@@ -1,13 +1,16 @@
 module.exports = {
-  // purge: [],
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: (theme) => ({
+        "fun-facts": "url('/src/images/funfacts-2-bg.png')",
+      }),
       colors: {
         primary: "#fdc800",
         secondary: "#0d2741",
         hero: "#f0f3f8",
+        teal: "#00b4b0",
       },
       fontFamily: {
         heading: ["DM Serif Display"],
