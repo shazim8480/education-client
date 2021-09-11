@@ -35,7 +35,7 @@ const Funfacts = () => {
         {/* responsive grid */}
         <div className="grid grid-cols-1 justify-items-center md:gap-8 lg:gap-8 md:grid-cols-4 lg:grid-cols-4">
           {funFactsData.map((facts) => (
-            <FactsCard facts={facts} key={facts.title} />
+            <FactsCard facts={facts} key={facts.category} />
           ))}
         </div>
       </div>

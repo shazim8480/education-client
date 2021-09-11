@@ -27,10 +27,10 @@ const Navbar = () => {
             <Popover.Group as="nav" className="hidden md:flex ">
               <div className="items-center space-x-10 md:flex md:justify-end ">
                 <Link
-                  to="/"
+                  to="/admin/dashboard"
                   className="text-base font-body text-secondary hover:text-gray-900"
                 >
-                  Courses
+                  Admin
                 </Link>
                 <Link
                   to="/"
@@ -91,10 +91,10 @@ const Navbar = () => {
               <div className="px-5 py-6 space-y-6">
                 <div className="grid grid-cols-1 gap-y-4">
                   <Link
-                    to="/"
+                    to="/admin/dashboard"
                     className="text-base font-body text-secondary hover:text-gray-700"
                   >
-                    Courses
+                    Admin
                   </Link>
 
                   <Link

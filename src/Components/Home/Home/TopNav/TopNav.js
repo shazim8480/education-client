@@ -29,15 +29,15 @@ const brandIcons = [
 const TopNav = () => {
   return (
     <section className="hidden md:block lg:block">
-      <div className="bg-primary py-4 container">
-        <div className="flex justify-between items-center text-secondary text-sm font-body">
+      <div className="container py-4 bg-primary">
+        <div className="flex items-center justify-between text-sm text-secondary font-body">
           {/* icons and descriptions part */}
           <div className="flex">
             {navInfo.map((info) => {
               return (
                 <div className="flex justify-start mr-8 ">
                   <div className="pr-4">
-                    <FontAwesomeIcon icon={info.icon} />
+                    <FontAwesomeIcon icon={info.icon} key={info.icon} />
                   </div>
                   <h5>{info.description}</h5>
                 </div>
@@ -50,7 +50,7 @@ const TopNav = () => {
               return (
                 <div className="flex">
                   <div className="pl-2">
-                    <FontAwesomeIcon icon={icons.brand} />
+                    <FontAwesomeIcon icon={icons.brand} key={icons.brand} />
                   </div>
                 </div>
               );

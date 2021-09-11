@@ -12,7 +12,7 @@ const Login = () => {
             <img className="w-auto h-12" src={loginLogo} alt="logo" />
           </div>
           <div className="flex flex-col justify-center px-8 my-auto mt-12 md:justify-center lg:mt-36 md:px-24 lg:px-32">
-            <p className="text-2xl text-center lg:text-3xl text-secondary">
+            <p className="text-2xl text-center font-heading lg:text-3xl text-secondary">
               Sign In
             </p>
             <form className="flex flex-col pt-3 md:pt-6">
@@ -73,7 +73,7 @@ const Login = () => {
                 </Link>
               </p>
               <p className="py-6">
-                <Link to="/" className="text-center hover:underline">
+                <Link to="/" className="font-bold text-center hover:underline">
                   Back to Home
                 </Link>
               </p>

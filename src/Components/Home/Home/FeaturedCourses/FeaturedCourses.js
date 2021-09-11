@@ -24,14 +24,14 @@ const courseData = [
 
 const FeaturedCourses = () => {
   return (
-    <section className="container py-16  md:pt-52 md:pb-28 lg:pt-52 lg:pb-28">
-      <h3 className="pb-12 text-center font-heading text-3xl md:text-4xl text-secondary">
+    <section className="container py-16 md:pt-52 md:pb-28 lg:pt-52 lg:pb-28">
+      <h3 className="pb-12 text-3xl text-center font-heading md:text-4xl text-secondary">
         Top Featured Courses
       </h3>
 
-      <div className="mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 pb-6 gap-8">
+      <div className="grid grid-cols-1 gap-8 pb-6 mx-auto md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
         {courseData.map((course) => (
-          <CourseCard course={course} id={course.title} />
+          <CourseCard course={course} key={course.title} />
         ))}
       </div>
     </section>
