@@ -16,7 +16,7 @@ const CourseDetailsInner = () => {
     <div className="container py-16 bg-hero">
       <div className="lg:flex lg:justify-around">
         <div className="lg:w-3/5 header-info">
-          <h5 className="text-sm font-bold text-start lg:py-5 lg:text-left font-body text-primary">
+          <h5 className="text-sm font-bold text-center lg:text-left lg:py-5 font-body text-primary">
             Course Details
           </h5>
           <h3 className="mt-6 mb-12 text-3xl text-center lg:text-left text-secondary font-heading lg:text-5xl">
