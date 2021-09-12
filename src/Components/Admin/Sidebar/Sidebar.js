@@ -115,7 +115,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
             {/* map here */}
             {sideBarMenus.map((menu) => {
               return (
-                <li>
+                <li key={menu.title}>
                   <Link
                     to={menu.url}
                     className="flex items-center px-2 py-3 space-x-3 rounded-md text-hero"

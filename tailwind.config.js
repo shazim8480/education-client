@@ -12,6 +12,7 @@ module.exports = {
         hero: "#f0f3f8",
         teal: "#00b4b0",
         blueAlt: "#002147",
+        coursePriceBg: "#fefefe",
       },
       fontFamily: {
         heading: ["DM Serif Display"],

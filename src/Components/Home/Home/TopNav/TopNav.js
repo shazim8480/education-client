@@ -20,10 +20,10 @@ const navInfo = [
 ];
 
 const brandIcons = [
-  { brand: faFacebookF, href: "#" },
-  { brand: faPinterest, href: "#" },
-  { brand: faTwitter, href: "#" },
-  { brand: faInstagram, href: "#" },
+  { brand: faFacebookF, id: "1" },
+  { brand: faPinterest, id: "2" },
+  { brand: faTwitter, id: "3" },
+  { brand: faInstagram, id: "4" },
 ];
 
 const TopNav = () => {
@@ -35,9 +35,9 @@ const TopNav = () => {
           <div className="flex">
             {navInfo.map((info) => {
               return (
-                <div className="flex justify-start mr-8 ">
+                <div key={info.description} className="flex justify-start mr-8">
                   <div className="pr-4">
-                    <FontAwesomeIcon icon={info.icon} key={info.icon} />
+                    <FontAwesomeIcon icon={info.icon} />
                   </div>
                   <h5>{info.description}</h5>
                 </div>
@@ -48,9 +48,9 @@ const TopNav = () => {
           <div className="flex justify-end">
             {brandIcons.map((icons) => {
               return (
-                <div className="flex">
+                <div key={icons.id} className="flex">
                   <div className="pl-2">
-                    <FontAwesomeIcon icon={icons.brand} key={icons.brand} />
+                    <FontAwesomeIcon icon={icons.brand} />
                   </div>
                 </div>
               );

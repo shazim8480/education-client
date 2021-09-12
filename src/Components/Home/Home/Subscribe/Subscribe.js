@@ -3,7 +3,7 @@ import updateImg from "../../../../images/cta.png";
 
 const Subscribe = () => {
   return (
-    <section className="container mb-20">
+    <section className="container my-20">
       <div className="mx-auto lg:flex lg:justify-start lg:items-center">
         {/* image section */}
         <div className="">
