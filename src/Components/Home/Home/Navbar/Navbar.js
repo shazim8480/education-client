@@ -27,22 +27,28 @@ const Navbar = () => {
             <Popover.Group as="nav" className="hidden md:flex ">
               <div className="items-center space-x-10 md:flex md:justify-end ">
                 <Link
+                  to="/home"
+                  className="text-base font-body text-secondary hover:text-gray-900"
+                >
+                  Home
+                </Link>
+                <Link
                   to="/admin/dashboard"
                   className="text-base font-body text-secondary hover:text-gray-900"
                 >
                   Admin
                 </Link>
                 <Link
-                  to="/"
+                  to="/pricing"
                   className="text-base font-body text-secondary hover:text-gray-900"
                 >
-                  Blogs
+                  Pricing
                 </Link>
                 <Link
-                  to="/"
+                  to="/courseCategory"
                   className="text-base font-body text-secondary hover:text-gray-900"
                 >
-                  About Us
+                  Categories
                 </Link>
                 <Link
                   to="/login"
@@ -91,6 +97,12 @@ const Navbar = () => {
               <div className="px-5 py-6 space-y-6">
                 <div className="grid grid-cols-1 gap-y-4">
                   <Link
+                    to="/home"
+                    className="text-base font-body text-secondary hover:text-gray-900"
+                  >
+                    Home
+                  </Link>
+                  <Link
                     to="/admin/dashboard"
                     className="text-base font-body text-secondary hover:text-gray-700"
                   >
@@ -98,16 +110,16 @@ const Navbar = () => {
                   </Link>
 
                   <Link
-                    to="/"
+                    to="/pricing"
                     className="text-base font-body text-secondary hover:text-gray-700"
                   >
-                    Blogs
+                    Pricing
                   </Link>
                   <Link
-                    to="/"
+                    to="/courseCategory"
                     className="text-base font-body text-secondary hover:text-gray-700"
                   >
-                    About Us
+                    Categories
                   </Link>
                 </div>
                 <div>

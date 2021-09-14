@@ -13,13 +13,13 @@ const CourseDetailsInner = () => {
 
   //   console.log(courseDetails);
   return (
-    <div className="container py-16 bg-hero">
+    <div className="container py-16 mb-20 bg-hero">
       <div className="lg:flex lg:justify-around">
         <div className="lg:w-3/5 header-info">
           <h5 className="text-sm font-bold text-center lg:text-left lg:py-5 font-body text-primary">
             Course Details
           </h5>
-          <h3 className="mt-6 mb-12 text-3xl text-center lg:text-left text-secondary font-heading lg:text-5xl">
+          <h3 className="mt-6 mb-12 text-4xl text-center lg:text-left text-secondary font-heading lg:text-5xl">
             {courseData.title}
           </h3>
         </div>
@@ -29,7 +29,7 @@ const CourseDetailsInner = () => {
             $ {courseData.price}
           </h6>
           {/* button group */}
-          <div className="flex justify-center mt-4 ml-10 lg:mb-0 mb-14 lg:ml-0 lg:justify-start">
+          <div className="flex justify-center mt-4 ml-6 lg:mb-0 mb-14 lg:ml-0 lg:justify-start">
             <button className="inline-flex items-center px-5 py-2 border-0 rounded font-body text-secondary bg-primary focus:outline-none hover:bg-yellow-300 text-md">
               Buy Now
             </button>
@@ -66,9 +66,54 @@ const CourseDetailsInner = () => {
               What You'll Learn
             </h5>
             <div className="py-5 text-justify text-gray-800 font-body">
-              <p className="pt-4">{courseData.learningOutcome_1}</p>
-              <p className="pt-4">{courseData.learningOutcome_2}</p>
-              <p className="pt-4">{courseData.learningOutcome_3}</p>
+              <div className="flex justify-start">
+                <svg
+                  className="w-8 h-8 mt-3 mr-3 text-teal"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="4"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+                <p className="pt-4">{courseData.learningOutcome_1}</p>
+              </div>
+              <div className="flex justify-start">
+                <svg
+                  className="w-16 h-16 mr-3 -mt-1 text-teal"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="4"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+                <p className="pt-4">{courseData.learningOutcome_2}</p>
+              </div>
+              <div className="flex justify-start">
+                <svg
+                  className="w-16 h-16 mr-3 -mt-1 text-teal"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="4"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+                <p className="pt-4">{courseData.learningOutcome_3}</p>
+              </div>
             </div>
           </div>
         </div>
