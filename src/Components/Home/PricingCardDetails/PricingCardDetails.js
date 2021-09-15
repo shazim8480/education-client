@@ -32,8 +32,8 @@ const PricingCardDetails = ({ pricing }) => {
             <ul>
               {services.map((service, idx) => {
                 return (
-                  <li className="flex items-start mt-4">
-                    <div key={idx} className="flex-shrink-0">
+                  <li key={idx} className="flex items-start mt-4">
+                    <div className="flex-shrink-0">
                       <svg
                         className="w-6 h-6 text-teal"
                         stroke="currentColor"
@@ -41,9 +41,9 @@ const PricingCardDetails = ({ pricing }) => {
                         viewBox="0 0 24 24"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M5 13l4 4L19 7"
                         ></path>
                       </svg>

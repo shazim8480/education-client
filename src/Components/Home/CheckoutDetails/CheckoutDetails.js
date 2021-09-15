@@ -30,7 +30,7 @@ const CheckoutDetails = () => {
               </div>
               <div className="grid grid-cols-2 gap-4 px-8 pb-8">
                 <div className="col-span-2">
-                  <label className="text-xs font-semibold" for="cardNumber">
+                  <label className="text-xs font-semibold" htmlFor="cardNumber">
                     Card number
                   </label>
                   <input
@@ -40,7 +40,7 @@ const CheckoutDetails = () => {
                   />
                 </div>
                 <div className="">
-                  <label className="text-xs font-semibold" for="cardNumber">
+                  <label className="text-xs font-semibold" htmlFor="cardNumber">
                     Expiry Date
                   </label>
                   <input
@@ -50,7 +50,7 @@ const CheckoutDetails = () => {
                   />
                 </div>
                 <div className="">
-                  <label className="text-xs font-semibold" for="cardNumber">
+                  <label className="text-xs font-semibold" htmlFor="cardNumber">
                     CVC/CVV
                   </label>
                   <input
@@ -107,7 +107,7 @@ const CheckoutDetails = () => {
               <input id="termsConditions" type="checkbox" />
               <label
                 className="ml-2 text-xs text-gray-500"
-                for="termsConditions"
+                htmlFor="termsConditions"
               >
                 I agree to the terms and conditions.
               </label>

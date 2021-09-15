@@ -66,7 +66,7 @@ const PricingCard = () => {
               />
               <label
                 className="relative flex items-center justify-start w-10 h-6 p-1 border border-gray-500 rounded-full cursor-pointer left-48 lg:left-0"
-                for="toggle_1"
+                htmlFor="toggle_1"
               >
                 <span className="w-4 h-4 rounded-full bg-secondary"></span>
               </label>
