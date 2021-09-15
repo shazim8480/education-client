@@ -50,13 +50,13 @@ const PricingCard = () => {
           <h5 className="text-sm font-bold text-center lg:text-left lg:py-2 font-body text-primary">
             Our Plans
           </h5>
-          <h3 className="mt-3 mb-12 text-4xl text-center lg:text-left text-secondary font-heading lg:text-5xl">
+          <h3 className="mt-3 mb-16 text-4xl text-center lg:mb-12 lg:text-left text-secondary font-heading lg:text-5xl">
             Get in Reasonable Price
           </h3>
         </div>
         {/* toggle switch */}
-        <div className="pb-6 lg:pb-0">
-          <div className="font-semibold lg:mt-3 font-body text-md">
+        <div className="pb-12 lg:pb-0">
+          <div className="ml-2 font-semibold lg:ml-0 lg:mt-3 font-body text-md">
             <div className="flex items-center justify-start">
               <input
                 className="hidden"
@@ -65,15 +65,15 @@ const PricingCard = () => {
                 value="1"
               />
               <label
-                className="relative flex items-center justify-start w-10 h-6 p-1 border border-gray-500 rounded-full cursor-pointer left-48 lg:left-0"
+                className="relative flex items-center justify-start w-10 h-6 p-1 border border-gray-500 rounded-full cursor-pointer left-32 lg:left-0"
                 htmlFor="toggle_1"
               >
                 <span className="w-4 h-4 rounded-full bg-secondary"></span>
               </label>
-              <span className="relative w-8 ml-3 mr-3 left-48 lg:left-0">
+              <span className="relative w-8 ml-3 mr-3 left-32 lg:left-0">
                 Monthly
               </span>
-              <span className="absolute w-8 ml-28 lg:ml-0 lg:right-52">
+              <span className="absolute w-8 ml-12 lg:ml-0 lg:right-52">
                 Annually
               </span>
             </div>

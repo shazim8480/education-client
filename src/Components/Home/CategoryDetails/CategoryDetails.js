@@ -19,7 +19,7 @@ const CategoryDetails = () => {
       </div>
 
       {/* category select -- also dynamic from admin */}
-      <div className="grid grid-cols-2 gap-12 font-body lg:grid-cols-4 lg:justify-items-between justify-items-center">
+      <div className="grid grid-cols-1 space-y-8 lg:gap-12 font-body lg:grid-cols-4 lg:justify-items-between lg:space-y-0 justify-items-center">
         <div className="relative">
           <span className="font-semibold text-gray-700">Categories</span>
           <select
@@ -66,7 +66,7 @@ const CategoryDetails = () => {
         </div>
         {/* submit button -- upon all category select, course appears */}
         <div className="flex items-center justify-center w-full lg:justify-start">
-          <button className="px-5 py-2 ml-56 border-0 rounded lg:ml-3 font-body text-secondary bg-primary focus:outline-none hover:bg-yellow-300 text-md">
+          <button className="px-5 py-2 mt-4 ml-0 border-0 rounded lg:mt-0 lg:ml-3 font-body text-secondary bg-primary focus:outline-none hover:bg-yellow-300 text-md">
             Submit
           </button>
         </div>
